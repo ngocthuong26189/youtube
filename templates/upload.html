@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+{% block acb %}
+	<form action="" method='POST'>
+		<fieldset>
+			<legend>Upload video youtube</legend>
+
+			<input type="text" name="title" value="{{title}}" placeholder="Nhập tiêu đề video">
+			<input type="text" name="description" value="{{description }}" placeholder="Nhập description vào">
+			<input type="file" name="filename" value="{{filename}}" placeholder="Nhập file vào đây nè">
+			<select name="category">
+				<option value="value1">Value 1</option>
+				<option value="value2" selected>Value 2</option>
+				<option value="value3">Value 3</option>
+			</select>
+			<input type="text" name="keywords" value="{{ keywords }}" placeholder="Nhập keyword vào đây nhé">
+			<input type="submit" value="upload">
+		</fieldset>
+	</form>
+{% endblock %}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    {% block acb %}
+    		<h3 style="text-align:center;">Tim Kiem Youtube</h3>
+	<form align="center" method="POST">
+		<input type="text" name="key" value="" placeholder="Nhap tu khoa can tim">
+		<input type="submit" name="Submit" value="Click">
+    <a href="{{url_for('upload')}}" title="Upload">Upload video</a>
+	</form>
+    {% endblock %}
+    {% block content %}
+
+    {% endblock %}
+  </body>
+</html>
+

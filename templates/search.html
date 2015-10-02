@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+{% block content %}
+	
+	{% for item in videos %}
+		<div style="text-align:center; margin:0 auto;">
+			<p>{{item['title']}}</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/{{item['videoid']}}" frameborder="0" allowfullscreen></iframe>
+		</div>
+	{% endfor %}
+
+{% endblock %}
